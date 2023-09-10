@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sơ đồ cây</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="tree">
+      <li>
+        <span class="toggle closed" onclick="toggleNode(this)"></span>
+        Folder 1
+        <ul class="nested">
+          <li>Folder 1.1</li>
+          <li>Folder 1.2</li>
+        </ul>
+      </li>
+      <li>
+        <span class="toggle closed" onclick="toggleNode(this)"></span>
+        Folder 2
+        <ul class="nested">
+          <li>Folder 2.1</li>
+          <li>Folder 2.2</li>
+        </ul>
+      </li>
+    </ul>
+    <script src="main.js"></script>
+  </body>
+</html>

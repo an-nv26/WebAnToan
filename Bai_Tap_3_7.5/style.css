@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.form-group{
+    display: flex;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.form-sex input{
+    margin-right: -145px;
+}
+
+.form-group label{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.form-group input{
+    width: 70%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-course input{
+    width: 15%;
+    margin-right: -20px;
+}
+
+button{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer .submit{
+    margin: 10px 30px;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Khổ giấy A4 có độ dài ~800px, độ rộng ~1120px */
+.container {
+    width: 800px;
+    height: 1120px;
+    margin: auto;
+    border: 1px black solid;
+    font-size: 18px;
+}
+
+/*Top*/
+.container .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.container .top .left p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .top .left .logo {
+    font-weight: bold;
+}
+
+.container .top .right p {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .top .underline2,
+.container .top .underline1 {
+    position: relative;
+    display: inline-block;
+}
+
+.container .top .underline1::before {
+    position: absolute;
+    height: 3px;
+    width: 60%;
+    left: 50px;
+    bottom: -4px;
+    background: black;
+    display: block;
+    content: "";
+}
+
+.container .top .underline2::before {
+    position: absolute;
+    height: 3px;
+    width: 65%;
+    left: 60px;
+    bottom: -4px;
+    background: black;
+    display: block;
+    content: "";
+}
+
+/*Middle*/
+.container .middle {
+    padding-top: 30px;
+}
+
+.container .middle .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .middle .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.container .middle .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.container .middle .content p {
+    padding: 3px 0;
+}
+
+.container .middle .content .right{
+    margin-top: 28px;
+}
+
+.container .middle .content .right p {
+    padding: 3px 0;
+}
+
+/* bottom */
+.bottom{
+    margin: 30px;
+    padding: 0 30px; 
+}
+
+.bottom .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big{
+    border: 1px solid black;
+}
+
+.small{
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table .start{
+    text-align: start;
+}
+
+table.small tr:last-child th,
+table.small tr:last-child td {
+    border: none;
+}

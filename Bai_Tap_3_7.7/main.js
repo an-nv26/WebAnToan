@@ -1,0 +1,1 @@
+// code javascript ở trong file index.html

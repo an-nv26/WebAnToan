@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập Dữ liệu Lớp Học</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Nhập dữ liệu lớp học</h2>
+      </div>
+      <div class="content">
+        <form action="">
+          <div class="setup">
+            <label for="fullName">Họ và Tên</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Nguyễn Văn A..."
+              required
+            />
+          </div>
+          <div class="setup">
+            <label for="studentId">Mã SV</label>
+            <input
+              type="text"
+              id="studentId"
+              placeholder="AT170000..."
+              required
+            />
+          </div>
+          <div class="setup">
+            <label for="studentClass">Lớp</label>
+            <input
+              type="text"
+              id="studentClass"
+              placeholder="L01..."
+              required
+            />
+          </div>
+          <div class="setup">
+            <label for="course">Môn học</label>
+            <input
+              type="text"
+              id="course"
+              placeholder="Công nghệ Web an toàn..."
+              required
+            />
+          </div>
+          <input type="button" value="Submit" onclick="validateInputs()" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="menu">
+      <div onclick="changeContent('HTML')">HTML</div>
+      <div onclick="changeContent('CSS')">CSS</div>
+      <div onclick="changeContent('Javascript')">JavaScript</div>
+      <div onclick="changeContent('PHP')">PHP</div>
+      <div onclick="changeContent('Python')">Python</div>
+      <div onclick="changeContent('Java')">Java</div>
+    </div>
+    <div id="title">Vui lòng chọn mục mà bạn muốn</div>
+    <script>
+      var menuItems = document.querySelectorAll("#menu div");
+      var title = document.getElementById("title");
+
+      function changeContent(content) {
+        title.textContent = "Bạn vừa chọn " + content;
+      }
+    </script>
+  </body>
+</html>

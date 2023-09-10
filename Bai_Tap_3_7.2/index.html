@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>Bài kiểm tra trắc nghiệm</h1>
+      </div>
+      <div class="content">
+        <div class="question">
+          <h2>Câu 1: HTML là viết tắt của?</h2>
+          <input type="text" id="textInput" required />
+        </div>
+        <div class="question">
+          <h2>
+            Câu 2: Academy of Cryptography Techniques là tên của học viện nào
+            sau đây?
+          </h2>
+          <input
+            type="radio"
+            name="radioGroup"
+            id="radioInput1"
+            value="true"
+          />Học viện kỹ thuật mật mã <br />
+          <input
+            type="radio"
+            name="radioGroup"
+            id="radioInput2"
+            value="false"
+          />Học viện công nghệ bưu chính viễn thông <br />
+          <input
+            type="radio"
+            name="radioGroup"
+            id="radioInput3"
+            value="false"
+          />Học viện kỹ thuật quân sự
+        </div>
+        <div class="question">
+          <h2>Câu 3: Môn công nghệ web an toàn có khó không?</h2>
+          <input type="checkbox" id="checkboxInput" value="true" />Khó <br />
+          <input type="checkbox" id="checkboxInput" value="true" />Rất khó
+          <br />
+        </div>
+        <input type="button" onclick="validateForm()" value="Nộp Bài" /> <br />
+      </div>
+      <div class="score">
+        <h2 id="result"></h2>
+      </div>
+    </div>
+  </body>
+</html>

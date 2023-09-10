@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #eee;
+    width: 30%;
+    margin: auto;
+}
+
+#menu div {
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#menu div:hover {
+    background-color: blue;
+}
+
+#menu div.active {
+    background-color: lightgreen;
+}
+
+#title {
+    margin-top: 10px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}

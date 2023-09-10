@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 25%;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border-radius: 10px 0 10px 0;
+    border: 3px solid rgb(13, 152, 199);
+    width: 200px;
+    height: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+/*Header*/
+#header {
+    display: flex;
+    background-color: rgb(200, 200, 200);
+}
+
+.avt {
+    margin: 20px 0 20px 40px;
+}
+
+/* header-sub */
+.header-sub {
+    margin: 20px 40px;
+}
+
+.header-sub p{
+    padding: 5px 0;
+}
+
+.header-sub i{
+    padding-right: 10px;
+}
+
+/*Content*/
+#content {
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+}
+
+/* Content left */
+.content-left {
+    width: 55%;
+}
+
+.content-left h2 i {
+    margin-right: 10px;
+}
+
+/* interview */
+.skill,
+.contact,
+.activity,
+.work-experience,
+.interview{
+    padding-bottom: 20px;
+}
+
+.hobby h2,
+.skill h2,
+.contact h2,
+.award h2,
+.activity h2,
+.work-experience h2,
+.interview h2{
+    padding-bottom: 5px;
+}
+
+.hobby ul,
+.skill ul,
+.award ul,
+.activity ul,
+.work-experience ul,
+#content .interview ul {
+    padding-inline-start: 40px;
+}
+
+.award ul li p,
+.activity ul li,
+.work-experience ul h3,
+.work-experience ul li p,
+#content .interview ul h3,
+#content .interview ul li p {
+    padding-bottom: 5px;
+}
+
+/* work-experience */
+.work-experience .content-title i{
+    padding-right: 5px;
+}
+
+/* activity */
+.skill ul li p,
+.contact ul li,
+.activity ul li{
+    font-size: 18px;
+}
+
+/* award */
+.award .content-title i{
+    padding-right: 10px;
+}
+
+/* Content Right */
+.content-right {
+    width: 40%;
+}
+
+.content-right h2 i {
+    margin-right: 10px;
+}
+
+.content-title {
+    color: rgb(13, 152, 199);
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0 0 0 4px;
+}
+
+.contact ul li i {
+    padding-right: 12px;
+}
+
+/* contact */
+.contact ul{
+    padding-inline-start: 40px;
+}
+
+.contact ul li{
+    padding-bottom: 10px;
+}
+
+.contact ul li a{
+    color: black;
+}
+
+.contact .content-title i{
+    padding-right: 4px;
+}
+
+/* Skill */
+.skill ul li p{
+    padding-bottom: 5px;
+}
+
+.skill .content-title i{
+    padding-right: 9px;
+}
+
+/* Hobby */
+.hobby ul li p{
+    padding-bottom: 5px;
+}

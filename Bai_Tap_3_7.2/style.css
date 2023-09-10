@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+}
+
+.content{
+    display: block;
+    width: 80%;
+    padding: 30px 10%;
+    margin: auto;
+}
+
+.content .question{
+    margin-bottom: 30px;
+}
+
+.content .question h2{
+    padding-bottom: 10px;
+}
+
+#textInput{
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 10px 10px 0 0;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=button] {
+    background-color: #531DEA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.score{
+    width: 60%;
+    float: right;
+}
