@@ -7,63 +7,31 @@
 body{
     width: 50%;
     margin: 10% auto;
+    font-size: 30px;
 }
 
-.tree{
+.tree {
     list-style-type: none;
-    padding: 0;
+    padding-left: 20px;
 }
 
-.tree li{
-    margin: 0;
-    padding: 20px 0 0 22px;
+.tree li {
     position: relative;
+    padding: 10px;
 }
 
-.tree li::before,
-.tree li::after{
-    content: '';
-    left: -12px;
+.tree li::before {
+    content: "+";
     position: absolute;
-    right: auto;
+    left: -15px;
 }
 
-.tree li::before{
-    border-left: 1px solid #000;
-    bottom: 50px;
-    top: 0;
+.tree li.expanded::before {
+    content: "-";
 }
 
-.tree li::after{
-    border-top: 1px solid #000;
-    height: 100%;
-    top: 0;
-}
-
-.tree li:last-child::before{
-    height: 30px;
-}
-
-.toggle{
-    cursor: pointer;
-    display: inline-block;
-    font-size: 20px;
-    margin-left: -22px;
-    position: absolute;
-}
-
-.toggle.closed::before{
-    content: '+';
-}
-
-.toggle.opened::before{
-    content: '-';
-}
-
-.nested{
+.tree li ul {
+    list-style-type: none;
+    padding-left: 20px;
     display: none;
-}
-
-.nested .active{
-    display: block;
 }
